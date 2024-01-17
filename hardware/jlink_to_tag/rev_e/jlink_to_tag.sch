@@ -6889,12 +6889,18 @@ Basic schematic elements and footprints for 0201, 0402, 0603, 1206, and PTH resi
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="470"/>
 <part name="S1" library="switches" deviceset="EVQP2" device=""/>
-<part name="S2" library="switches" deviceset="TE_SSA12/SPDT" device=""/>
+<part name="S2" library="switches" deviceset="TE_SSA12/SPDT" device="">
+<attribute name="DIGIKEY" value="2223-SLW-883935-2A-D-ND"/>
+<attribute name="MPN" value="SLW-883935-2A-D"/>
+</part>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="S3" library="switches" deviceset="TE_SSA12/SPDT" device=""/>
+<part name="S3" library="switches" deviceset="TE_SSA12/SPDT" device="">
+<attribute name="DIGIKEY" value="2223-SLW-883935-2A-D-ND"/>
+<attribute name="MPN" value="SLW-883935-2A-D"/>
+</part>
 <part name="S4" library="switches" deviceset="OS103011MS8QP1" device=""/>
-<part name="R2" library="passives" deviceset="RESISTOR" device="0402_RES" value="10k"/>
-<part name="R3" library="passives" deviceset="RESISTOR" device="0402_RES" value="20k"/>
+<part name="R2" library="passives" deviceset="RESISTOR" device="0603_RES" value="10k"/>
+<part name="R3" library="passives" deviceset="RESISTOR" device="0603_RES" value="20k"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -6983,6 +6989,7 @@ uses the SWDIO line for !RESET.</text>
 <instance part="S2" gate="G$1" x="101.6" y="83.82" smashed="yes">
 <attribute name="NAME" x="99.06" y="76.2" size="1.27" layer="95"/>
 <attribute name="VALUE" x="99.06" y="73.66" size="1.27" layer="96"/>
+<attribute name="MPN" x="101.6" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND3" gate="1" x="45.72" y="76.2" smashed="yes">
 <attribute name="VALUE" x="43.18" y="73.66" size="1.778" layer="96"/>
@@ -6990,6 +6997,7 @@ uses the SWDIO line for !RESET.</text>
 <instance part="S3" gate="G$1" x="104.14" y="40.64" smashed="yes">
 <attribute name="NAME" x="101.6" y="33.02" size="1.27" layer="95"/>
 <attribute name="VALUE" x="101.6" y="30.48" size="1.27" layer="96"/>
+<attribute name="MPN" x="104.14" y="40.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S4" gate="G$1" x="101.6" y="114.3" smashed="yes">
 <attribute name="NAME" x="101.6" y="119.38" size="1.27" layer="95" ratio="12"/>
