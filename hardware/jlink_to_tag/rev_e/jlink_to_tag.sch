@@ -6866,7 +6866,9 @@ Basic schematic elements and footprints for 0201, 0402, 0603, 1206, and PTH resi
 <part name="J1" library="con-ml" deviceset="ML20" device="">
 <attribute name="DIGIKEY" value="S9172-ND"/>
 </part>
-<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE">
+<attribute name="DIGIKEY" value="160-1827-1-ND"/>
+</part>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J2" library="headers" deviceset="JLINK_6PIN_TAG-CON" device=""/>
@@ -6887,7 +6889,9 @@ Basic schematic elements and footprints for 0201, 0402, 0603, 1206, and PTH resi
 <attribute name="DIGIKEY" value="399-3684-1-ND"/>
 </part>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="470"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="470">
+<attribute name="DIGIKEY" value="P470DBCT-ND"/>
+</part>
 <part name="S1" library="switches" deviceset="EVQP2" device=""/>
 <part name="S2" library="switches" deviceset="TE_SSA12/SPDT" device="">
 <attribute name="DIGIKEY" value="2223-SLW-883935-2A-D-ND"/>
@@ -6899,8 +6903,12 @@ Basic schematic elements and footprints for 0201, 0402, 0603, 1206, and PTH resi
 <attribute name="MPN" value="SLW-883935-2A-D"/>
 </part>
 <part name="S4" library="switches" deviceset="OS103011MS8QP1" device=""/>
-<part name="R2" library="passives" deviceset="RESISTOR" device="0603_RES" value="10k"/>
-<part name="R3" library="passives" deviceset="RESISTOR" device="0603_RES" value="20k"/>
+<part name="R2" library="passives" deviceset="RESISTOR" device="0603_RES" value="10k">
+<attribute name="DIGIKEY" value="RMCF0603FT10K0CT-ND"/>
+</part>
+<part name="R3" library="passives" deviceset="RESISTOR" device="0603_RES" value="20k">
+<attribute name="DIGIKEY" value="P20.0KHCT-ND"/>
+</part>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -6927,6 +6935,7 @@ uses the SWDIO line for !RESET.</text>
 <instance part="D1" gate="G$1" x="187.96" y="137.16" smashed="yes">
 <attribute name="NAME" x="191.516" y="132.588" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="193.675" y="132.588" size="1.778" layer="96" rot="R90"/>
+<attribute name="DIGIKEY" x="187.96" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="22.86" y="119.38" smashed="yes">
 <attribute name="VALUE" x="20.32" y="116.84" size="1.778" layer="96"/>
@@ -6981,6 +6990,7 @@ uses the SWDIO line for !RESET.</text>
 <instance part="R1" gate="G$1" x="187.96" y="147.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="189.4586" y="151.13" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="184.658" y="151.13" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIGIKEY" x="187.96" y="147.32" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="S1" gate="G$1" x="35.56" y="83.82" smashed="yes">
 <attribute name="NAME" x="33.02" y="81.28" size="1.778" layer="95"/>
@@ -7006,10 +7016,12 @@ uses the SWDIO line for !RESET.</text>
 <instance part="R2" gate="G$1" x="129.54" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.0414" y="85.09" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="132.842" y="85.09" size="1.778" layer="96" rot="R90"/>
+<attribute name="DIGIKEY" x="129.54" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="129.54" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.0414" y="72.39" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="132.842" y="72.39" size="1.778" layer="96" rot="R90"/>
+<attribute name="DIGIKEY" x="129.54" y="76.2" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND8" gate="1" x="129.54" y="66.04" smashed="yes">
 <attribute name="VALUE" x="127" y="63.5" size="1.778" layer="96"/>
